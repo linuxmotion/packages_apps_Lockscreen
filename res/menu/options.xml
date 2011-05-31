@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/circular"
+          android:title="@string/circular_string" />
+    <item android:id="@+id/rotary"
+          
+          android:title="@string/rotary_string" />
+</menu>
