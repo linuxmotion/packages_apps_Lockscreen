@@ -19,15 +19,16 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_STATIC_JAVA_LIBRARIES := android-common
+LOCAL_STATIC_JAVA_LIBRARIES := android.policy
+LOCAL_JAVA_LIBRARIES := android.policy
 
-LOCAL_SRC_FILES := $(call all-subdir-java-files)
+LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
 LOCAL_PACKAGE_NAME := Lockscreen
-LOCAL_CERTIFICATE := shared
+LOCAL_CERTIFICATE := platform
 
 LOCAL_OVERRIDES_PACKAGES := Lockscreen
 
-LOCAL_PROGUARD_FLAG_FILES := proguard.cfg
+LOCAL_PROGUARD_ENABLED := disabled
 
 include $(BUILD_PACKAGE)
