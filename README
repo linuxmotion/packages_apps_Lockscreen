@@ -1,0 +1,14 @@
+
+frameworks/base/policy/src/com/android/internal/policy/impl/LockPatternKeyguardView.java
+
+This is where the lockscreen that is created
+is returned so that the phone can create the lockscreen
+when the phone is turned off.
+My thinking is to create an intent that must be explictly
+set to allow users to set a lockscreen
+if the user does not have a lockscreen app installed,
+other than the systems, then the sytems will always be used.
+The lockcsreen app should only contain the lockscreen for
+for when no other security is enabled, as the system does.
+If security is enabled then this lockscreen should never
+be shown even with the intent.
