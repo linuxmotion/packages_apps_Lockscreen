@@ -9,7 +9,7 @@ import android.content.res.Configuration;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-import com.android.internal.lockscreen.LockScreenView;
+import com.android.security.lockscreen.LockScreenView;
 import com.android.internal.policy.impl.KeyguardScreenCallback;
 import com.android.internal.policy.impl.KeyguardUpdateMonitor;
 import com.android.internal.telephony.IccCard.State;

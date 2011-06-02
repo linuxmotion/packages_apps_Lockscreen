@@ -5,11 +5,14 @@
     <uses-sdk android:minSdkVersion="8" />
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".MusicTester"
+        <activity android:name=".LockScreenTester"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.ACTION_APP_LOCKSCREEN_TEST" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                
+                <category android:name="android.intent.category.LOCKSCREEN" />
             </intent-filter>
         </activity>
 
